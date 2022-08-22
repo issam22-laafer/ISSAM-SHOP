@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <script
+      src="https://kit.fontawesome.com/dad8a5aed6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ___________________nav_____________ -->
+    <nav>
+      <input id="baresicon" type="checkbox" />
+      <label class="nav_bares" for="baresicon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <div class="logo">
+        <img src="../picture/shirt.png" alt="" />
+      </div>
+      <div class="serche">
+        <input type="text" />
+        <button>
+          <i id="srch_icon" class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <ul id="nav_ul">
+        <li><a href="../html/home.html">Home</a></li>
+        <!-- <li><a href="">Categories</a></li> -->
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Categories</a>
+          <div class="dropdown-content">
+            <a href="../html/men.html">Men</a>
+            <a href="../html/women.html">Women</a>
+          </div>
+        </li>
+        <li><a style="color: rgb(180, 21, 21)">Contact Us</a></li>
+        <li><a href="../html/login.html">Login</a></li>
+        <li><a href="">Sign up</a></li>
+        <li>
+          <a href="../html/account.html"
+            ><i class="fa-solid fa-file-invoice"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- _____________contact_form_________________ -->
+
+    <div class="contact_form">
+      <div>Contact Form</div>
+      <form action="https://formspree.io/f/mrgjvndz" method="POST">
+        <span id="spanname"></span><br /><input
+          pattern="^[a-zA-z][^0-9]{4,}$"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <span id="spanemail"></span><br /><input
+          pattern="^[a-zA-z]{4,10}[0-9]{1,4}@gmail.(com|net)$"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <span id="spanphone"></span><br /><input
+          pattern="^06[0-9]{8}$"
+          id="phone"
+          id="phone"
+          type="text"
+          name="phone"
+          placeholder="Your phone Number"
+          required
+        />
+        <span id="spanmessage"></span><br /><textarea
+          id="message"
+          name="message"
+          id=""
+          rows="6"
+          placeholder="Your Message"
+          required
+          pattern="[0-9a-zA-Z]{5,}/ig"
+        ></textarea>
+        <!-- <button class="dwnld-cv" id="submit" type="submit" disabled >Send Message</button> -->
+        <input
+          type="button"
+          value="Send Message"
+          id="submit"
+          class="dwnld-cv"
+        />
+        <input type="reset" value="reset" class="dwnld-cv" />
+      </form>
+    </div>
+    <footer>
+      <div class="info_container">
+        <div class="store_infos">
+          <div id="email">
+            <i class="fa-solid fa-at"></i> issamshop@gmail.com
+          </div>
+          <div id="phone_number">
+            <i class="fa-solid fa-phone"></i> 0600000000
+          </div>
+          <div id="location">
+            <i class="fa-solid fa-location-dot"></i>Ait Ourir Marrakech
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.6074531348004!2d-7.705975000000043!3d31.56238599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda5574edbf65887%3A0xda8bc14ccbe734a6!2sLaafar!5e0!3m2!1sfr!2sma!4v1660834714406!5m2!1sfr!2sma"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="social_media_links">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a
+        ><a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <hr />
+      <div class="bank_card">
+        <p>We Accept</p>
+        <div>
+          <img
+            src="https://pngimg.com/uploads/mastercard/mastercard_PNG26.png"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968299.png"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/888/888870.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="copy_right">© 2022 Issam Shop</div>
+    </footer>
+  </body>
+</html>
